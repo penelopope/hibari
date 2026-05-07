@@ -52,6 +52,21 @@ func init() {
 	capboard = client.Database("Hibari").Collection("Capboard")
 }
 
+func ImportCapboardHandlers() []Handler {
+	return []Handler{
+		{
+			Name:     "CapboardHandlers",
+			Function: CapBoardHandler,
+			File:     "capboard.go",
+		},
+		{
+			Name:     "CapboardCommandHandlers",
+			Function: CapBoardCommandHandler,
+			File:     "capboard.go",
+		},
+	}
+}
+
 func CapBoardHandler(s *discordgo.Session, m *discordgo.MessageReactionAdd) {
 	switch m.Emoji.Name {
 	case "🧢":

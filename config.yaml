@@ -11,7 +11,7 @@ discord:
   confession-channel: "1416394927310635058" # TEST
   vent-channel: "1399656804455157906" 
   confession-cooldown: 10
-
+  mod-log-channel: "1397965285851529296"
   # mod-channel: "1416394927310635058"
   mod-channel: "1416394927310635058"
 

@@ -7,6 +7,16 @@ import (
 	"github.com/charmbracelet/log"
 )
 
+func ImportAdminHandlers() []Handler {
+	return []Handler{
+		{
+			Name:     "AdminHandler",
+			Function: AdminHandler,
+			File:     "admin.go",
+		},
+	}
+}
+
 func AdminHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 	CommandSent := strings.TrimSpace(strings.TrimPrefix(m.Message.Content, C("admin")))
 	if !strings.HasPrefix(m.Content, C("admin")) {
