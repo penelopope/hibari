@@ -8,7 +8,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/redis/go-redis/v9 v9.17.2
 	github.com/sergi/go-diff v1.4.0
-	go.mongodb.org/mongo-driver/v2 v2.5.0
+	go.mongodb.org/mongo-driver/v2 v2.7.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
